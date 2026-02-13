@@ -1,0 +1,10 @@
+
+{
+  "name": "Gemini Mobile Nexus",
+  "description": "A high-performance, mobile-optimized web application designed for Android WebView integration, featuring real-time AI assistance and smart dashboard tools.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
