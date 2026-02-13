@@ -17,7 +17,7 @@ const Dashboard: React.FC<DashboardProps> = ({ isMobile }) => {
     <div className={`space-y-8 animate-fadeIn ${isMobile ? 'p-6' : 'p-0'}`}>
       <header className={`flex justify-between items-start ${isMobile ? '' : 'mb-10'}`}>
         <div>
-          <p className="text-slate-400 text-xs font-black uppercase tracking-[0.2em] mb-2">Cloud Intelligence Platform</p>
+          <p className="text-slate-400 text-xs font-black uppercase tracking-[0.2em] mb-2">PT Mifa Bersaudara</p>
           <h1 className={`${isMobile ? 'text-3xl' : 'text-5xl'} font-black text-slate-800 tracking-tighter`}>
             {isMobile ? 'Halo, Gemini!' : 'Nexus Control Center'} 👋
           </h1>
