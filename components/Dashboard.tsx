@@ -17,9 +17,9 @@ const Dashboard: React.FC<DashboardProps> = ({ isMobile }) => {
     <div className={`space-y-8 animate-fadeIn ${isMobile ? 'p-6' : 'p-0'}`}>
       <header className={`flex justify-between items-start ${isMobile ? '' : 'mb-10'}`}>
         <div>
-          <p className="text-slate-400 text-xs font-black uppercase tracking-[0.2em] mb-2">PT Mifa Bersaudara</p>
+          <p className="text-slate-400 text-xs font-black uppercase tracking-[0.2em] mb-2">STMIK AMIK BANDUNG</p>
           <h1 className={`${isMobile ? 'text-3xl' : 'text-5xl'} font-black text-slate-800 tracking-tighter`}>
-            {isMobile ? 'Halo, Gemini!' : 'Nexus Control Center'} 👋
+            {isMobile ? 'Selamat Datang Di ' : 'MIMS BIMS Mobile'} 👋
           </h1>
         </div>
         {isMobile && (
@@ -40,9 +40,9 @@ const Dashboard: React.FC<DashboardProps> = ({ isMobile }) => {
         ))}
       </div>
 
-      <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-3'} gap-8`}>
+      <div className={`grid ${isMobile ? 'grid-cols-1' : ''} gap-8`}>
         {/* Main Content Card */}
-        <section className={`${isMobile ? '' : 'col-span-2'} bg-indigo-600 rounded-[3rem] p-10 text-white relative overflow-hidden shadow-2xl shadow-indigo-300 group`}>
+        {/* <section className={`${isMobile ? '' : 'col-span-2'} bg-indigo-600 rounded-[3rem] p-10 text-white relative overflow-hidden shadow-2xl shadow-indigo-300 group`}>
           <div className="relative z-10">
             <span className="inline-block px-4 py-1.5 bg-white/20 rounded-full text-[10px] font-black uppercase mb-6 backdrop-blur-md border border-white/10 tracking-widest">Enterprise Feature</span>
             <h3 className={`${isMobile ? 'text-2xl' : 'text-4xl'} font-black mb-4 leading-tight tracking-tighter`}>
@@ -57,16 +57,25 @@ const Dashboard: React.FC<DashboardProps> = ({ isMobile }) => {
           </div>
           <div className="absolute -right-10 -top-10 w-64 h-64 bg-white/10 rounded-full blur-[100px] group-hover:scale-125 transition-transform duration-1000"></div>
           <div className="absolute right-10 bottom-10 text-9xl opacity-10 rotate-12 grayscale brightness-200 pointer-events-none">🎨</div>
-        </section>
+        </section> */}
 
         {/* Secondary Info */}
         <section className="bg-white rounded-[3rem] p-8 border border-slate-100 shadow-xl shadow-slate-200/20">
-          <h3 className="text-sm font-black text-slate-400 uppercase tracking-widest mb-6">Quick Actions</h3>
-          <div className="grid grid-cols-2 gap-4">
-             <QuickActionItem icon="📝" label="New Prompt" color="bg-blue-50" />
-             <QuickActionItem icon="🖼️" label="Asset Lab" color="bg-purple-50" />
-             <QuickActionItem icon="📑" label="Docs AI" color="bg-emerald-50" />
-             <QuickActionItem icon="⚙️" label="Config" color="bg-amber-50" />
+          <h3 className="text-sm font-black text-slate-400 uppercase tracking-widest mb-6">Menu Safety</h3>
+          <div className="grid grid-cols-4 gap-4">
+             <QuickActionItem icon="📝" label="Izin Kerja" color="bg-blue-50" />
+             <QuickActionItem icon="⚙️" label="penilaian dan evaluasi pjo" color="bg-blue-50" />
+             <QuickActionItem icon="📑" label="komisioning" color="bg-blue-50" />
+             <QuickActionItem icon="🖼️" label="SPIP - Phase 1 (database-admin)" color="bg-purple-50" />
+             <QuickActionItem icon="📑" label="MOC" color="bg-emerald-50" />
+             <QuickActionItem icon="⚙️" label="JSA" color="bg-amber-50" />
+
+              <QuickActionItem icon="📝" label="kimper" color="bg-blue-50" />
+             <QuickActionItem icon="⚙️" label="SPIP - Phase 2 (end-user)" color="bg-blue-50" />
+             <QuickActionItem icon="📑" label="Pengajuan APD" color="bg-blue-50" />
+             <QuickActionItem icon="🖼️" label="Event & Strava" color="bg-purple-50" />
+             <QuickActionItem icon="📑" label="Inspeksi" color="bg-emerald-50" />
+             <QuickActionItem icon="⚙️" label="Hazob" color="bg-amber-50" />
           </div>
           <div className="mt-8 pt-8 border-t border-slate-50">
              <p className="text-[11px] font-bold text-slate-400 uppercase mb-4 tracking-widest">Current Status</p>

@@ -21,8 +21,8 @@ const DesktopSidebar: React.FC<SidebarProps> = ({ activeView, onViewChange }) =>
         <div className="flex items-center space-x-3 mb-12">
           <div className="w-12 h-12 bg-indigo-500 rounded-2xl flex items-center justify-center text-2xl shadow-lg shadow-indigo-500/30">💎</div>
           <div>
-            <span className="font-black text-xl tracking-tighter block leading-none">GEMINI NEXUS</span>
-            <span className="text-[10px] text-indigo-400 font-bold uppercase tracking-[0.3em]">Desktop OS</span>
+            <span className="font-black text-xl tracking-tighter block leading-none">MIMS BIMS</span>
+            <span className="text-[10px] text-indigo-400 font-bold uppercase tracking-[0.3em]">MOBILE & WEBSITE APLICATION</span>
           </div>
         </div>
         
